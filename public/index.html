@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>👨‍💻 User Management System</h1>
+
+    <p class="subtitle">
+        MongoDB + Express.js CRUD Application
+    </p>
+
+    <div class="form-box">
+
+        <input type="hidden" id="userId">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter Name">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Email">
+
+        <button onclick="saveUser()">
+            Save User
+        </button>
+
+    </div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search User..."
+        onkeyup="searchUser()">
+
+    <h3 id="totalUsers"></h3>
+
+    <div id="userList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
